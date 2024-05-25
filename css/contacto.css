@@ -1,0 +1,98 @@
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+h2 {
+    padding: 2rem 0 0 0;
+}
+
+form {
+    width: 40%;
+}
+
+.map {
+    width: 50%;
+    height: 350px;
+    margin: 4rem 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f5f5;
+    filter: drop-shadow(4px 4px 4px #3d3d3d);
+}
+
+.formulario input[type="file"] {
+    width: 100%;
+}
+
+.formulario .btn {
+    width: 40%;
+    margin: 0;
+}
+
+@media (max-width: 425px) {
+    h2 {
+        padding: 2rem 0 0 0;
+    }
+
+    .contacto {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    .contacto form {
+        width: 90%;
+    }
+
+    .contacto .map {
+        width: 90%;
+        margin: 2rem 0 0 0;
+    }
+
+    .contacto form .btn {
+        width: 30%;
+    }
+
+    .formulario input[type="file"] {
+        width: 90%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    h2 {
+        padding: 2rem 0 0 0;
+    }
+
+    .contacto {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .formulario {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contacto form {
+        width: 90%;
+    }
+
+    .contacto .map {
+        width: 90%;
+        margin: 2rem 0;
+    }
+
+    .contacto form .btn {
+        width: 30%;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grupos Dos - Full Stack Python">
+    <meta name="keywords" content="paginas web, one page, landing page">
+    <title>Grupo Dos -Inmobiliaria</title>
+    <link rel="icon" href="./img/icono/casa.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <a href="./index.html">
+                    <img src="./img/icono/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/propiedades.html">Propiedades</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="menu-hamburguesa">
+                <div class="icono-hamburguesa" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="carrusel" class="carrusel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/prop/casa10.webp" class="d-block w-100 img-fluid" alt="casa-1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/prop/casa13.webp" class="d-block w-100 img-fluid" alt="casa-2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/prop/casa12.webp" class="d-block w-100 img-fluid" alt="casa-3">
+              </div>
+            </div>
+          </div>
+    </section>
+      
+
+    <main class="container">
+        <section id="buscador" class="buscador">
+            <h2>¿QUÉ PROPIEDADES BUSCABAS?</h2>
+            <form action="" class="form-buscador">
+                <select class="form-select">
+                <option selected>Operación</option>
+                <option value="1">Venta</option>
+                <option value="2">Alquiler</option>
+              </select>
+
+              <select class="form-select">
+                <option selected>Tipo</option>
+                <option value="1">Casa</option>
+                <option value="2">Departamento</option>
+                <option value="3">Ph</option>
+                <option value="4">Terreno</option>
+              </select>
+
+                <select class="form-select">
+                  <option selected>Zona</option>
+                  <option value="1">Capital Federal</option>
+                  <option value="2">G.B.A Zona Norte</option>
+                  <option value="3">G.B.A Zona Sur</option>
+                  <option value="4">G.B.A Zona Oeste</option>
+                </select>
+
+                <select class="form-select">
+                  <option selected>Localidad</option>
+                  <option value="1">Almagro</option>
+                  <option value="2">Caballito</option>
+                  <option value="3">Ramos Mejía</option>
+                  <option value="4">Palermo</option>
+                </select>
+            </form>
+
+            <form action="" class="form-buscador">
+                <select class="form-select">
+                    <option selected>Ambientes</option>
+                    <option value="1">Monoambiente</option>
+                    <option value="2">2 ambientes</option>
+                    <option value="3">3 ambientes</option>
+                    <option value="4">4 ambientes</option>
+                </select>
+                  
+                <div class="input-group">
+                    <span class="input-group-text">Desde</span>
+                    <input type="text" class="form-control" placeholder="$ 0">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Hasta</span>
+                    <input type="text" class="form-control" placeholder="$ 99999">
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-fw fa-search"></i>
+                    <a href="./pages/propiedades.html">BUSCAR</a>
+                </button>
+            </form>
+        </section>
+
+        <section id="propiedades" class="propiedades">
+            <div class="ventas">
+                <h2>Ventas</h2>
+                <div class="ventas-prop">
+                    <article class="card-prop">
+                        <figure>
+                            <img src="./img/prop/casa11.webp" class="img-fluid" alt="propiedad-11">
+                            <figcaption>Ramos Mejía</figcaption>
+                        </figure>
+                        <p>u$d 100.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="./img/prop/casa10.webp" class="img-fluid" alt="propiedad-10">
+                            <figcaption>Escobar</figcaption>
+                        </figure>
+                        <p>u$d 220.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="./img/prop/casa9.webp" class="img-fluid" alt="propiedad-9">
+                            <figcaption>Almagro</figcaption>
+                        </figure>
+                        <p>u$d 150.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="./img/prop/casa8.webp" class="img-fluid" alt="propiedad-8">
+                            <figcaption>San Isidro</figcaption>
+                        </figure>
+                        <p>u$d 180.000</p>
+                    </article>
+            </div>
+        </div>
+
+        <div class="alquileres">
+            <h2>Alquileres</h2>
+            <div class="alquileres-prop">
+                <article class="card-prop">
+                    <figure>
+                        <img src="./img/prop/casa12.webp" class="img-fluid" alt="propiedad-12">
+                        <figcaption>Recoleta</figcaption>
+                    </figure>
+                    <p>$350.000</p>
+                </article>
+
+                <article class="card-prop">
+                    <figure>
+                        <img src="./img/prop/casa13.webp" class="img-fluid" alt="propiedad-13">
+                        <figcaption>Palermo</figcaption>
+                    </figure>
+                    <p>$300.000</p>
+                </article>
+
+                <article class="card-prop">
+                    <figure>
+                        <img src="./img/prop/casa14.webp" class="img-fluid" alt="propiedad-14">
+                        <figcaption>Belgrano</figcaption>
+                    </figure>
+                    <p>$250.000</p>
+                </article>
+
+                <article class="card-prop">
+                    <figure>
+                        <img src="./img/prop/casa15.webp" class="img-fluid" alt="propiedad-15">
+                        <figcaption>San justo</figcaption>
+                    </figure>
+                    <p>$220.000</p>
+                </article>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <footer id="pie">
+        <div class="pie">
+            <div class="copy">© Grupo 2. Full Stack Python.</div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="btn-top">
+                <a href="#logo">
+                    <i class="fas fa-arrow-alt-circle-up"></i>
+                </a>
+            </div>     
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./javascript/app.js" defer></script>
+</body>
+</html>

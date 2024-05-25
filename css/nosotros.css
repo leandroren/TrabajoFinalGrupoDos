@@ -1,0 +1,145 @@
+
+/******* NOSOTROS *******/
+.nos {
+    width: auto;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.608); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+    .nos p {
+        text-align: center;
+        padding: .5rem 0;
+    }
+
+    .nos h2 {
+        text-align: center;
+        padding: .5rem 0 0 0;
+    }
+
+/******* Fin de NOSOTROS *******/
+
+/******* PERSONAS *******/
+
+.personas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
+.persona {
+    width: 30%;
+    height: 550px;
+    border-radius: 10px;
+    background-color: rgb(242 242 242);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+}
+
+    .persona h2 {
+        text-align: center;
+        padding: 2rem 0 0 0;
+    }
+
+    .persona p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .persona img {
+        width: 80%;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+@media (max-width: 425px) {
+    .nos {
+        position: static;
+        transform: none;
+        margin-bottom: 20px; 
+        box-shadow: none;
+        z-index: auto;
+    }
+    
+        .nos p {
+            padding: .5rem 0;
+        }
+    
+        .nos h2 {
+            padding: .5rem 0 0 0;
+        }
+
+    /******* PERSONAS *******/
+    
+.personas{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .persona {
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+        padding: .5rem 0;
+    }
+    
+        .persona img {
+            width: 80%;
+            height: 200px;
+            display: block;
+            margin: .5rem auto;
+        }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .nos {
+        position: static;
+        transform: none;
+        margin: 20px 0; 
+        box-shadow: none;
+        z-index: auto;
+        padding: 2rem 0;
+    }
+    
+        .nos p {
+            padding: 0;
+        }
+    
+        .nos h2 {
+            padding: 0;
+        }
+
+    /******* PERSONAS *******/
+    
+.personas{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .persona {
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+        padding: .5rem 0;
+    }
+    
+        .persona img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 1rem auto .5rem auto;
+        }
+}

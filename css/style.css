@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: auto;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #e6e9f7;
+}
+
+/******* Comunes *******/
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+a {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d6efd;
+}
+
+.btn{
+    border-radius: 4px;
+    background-color: #0d6efd;
+    color: #f2f2f2;
+}
+
+    .btn:hover{
+        background-color: #013687;
+        color: #f2f2f2;
+    }
+
+    .btn a{
+        color: #f2f2f2;
+    }
+
+/******* Inicio Cabecera *******/
+
+header {
+    background: #f2f2f2;
+    height: auto;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(4px 4px 4px);
+}
+
+nav {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 1rem 0;
+    }
+
+
+        .menu ul li {
+            margin-right: 10px;
+        }
+
+            .menu ul li a {
+                color: #3d3d3d;
+                font-size: 18px;
+                text-decoration: none;
+                margin: 1rem .5rem;
+            }
+
+                .menu ul li a:hover {
+                    color: #0d6efd;
+                    border-bottom: 1px solid #0d6efd;
+                }
+    
+                    .menu-hamburguesa {
+                        display: none;
+                    }
+
+                    nav .logo img{
+                        width: 200px;
+                        padding: 10px 0;
+                    }
+
+/******* Carrusel *******/
+.carrusel {
+    position: relative;
+  }
+
+    .carrusel img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+  
+  /******* buscador de propiedades *******/
+.buscador {
+    width: auto;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.608); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+    .buscador .form-buscador{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+        .buscador .form-select, .input-group, .btn{
+            width: 22%;
+            margin: .8rem 0;
+        }
+
+/****** Propiedades *******/
+
+.propiedades .ventas-prop, .alquileres-prop {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .propiedades .card-prop{
+        width: 250px;
+        height: auto;
+        margin: .5rem;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 4px;
+        text-align: center;
+        background-color: #f7f5f5;
+        filter: drop-shadow(4px 4px 4px black);
+    }
+
+        .propiedades figcaption{
+            font-weight: 300;
+            font-size: 16px;
+            padding-top: .5rem;
+        }
+
+            .propiedades p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+                .propiedades .card-prop img{
+                    width: 100%;
+                    height: 220px;
+                    object-fit: cover;
+                }
+            
+                    .propiedades .card-prop img:hover{
+                        cursor: pointer;
+                        filter: blur(1px);
+                        filter: grayscale(80%);
+                    }
+/****** Fin de Propiedades *******/
+
+
+
+/******* Footer *******/
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    margin-top: 2rem;
+    background-color: #f2f2f2
+}
+
+    .pie .copy{
+        width: 40%;
+        padding-left: 2rem;
+    }
+
+    .pie .redes{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+        .pie .redes a i{
+            font-size: 30px;
+        }
+
+            .pie .btn-top{
+                    width: 40%;
+                    padding-right: 2rem;
+                    display: flex;
+                    justify-content: end;
+            }
+
+                .pie .btn-top a i{
+                    font-size: 30px;
+                }
+
+
+
+
+
+/******* Fin de Footer *******/
+
+@media (max-width: 425px) {
+
+h2{
+    padding:2rem 0 0 0;
+}
+
+    nav {
+        align-items: center;
+    }
+
+.menu {
+    display: none;
+    width: 100%;
+}
+
+    .menu.active {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.566);
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+    }
+
+        .menu ul {
+            flex-direction: column;
+            list-style: none;
+            padding-left: 5%;
+        }
+
+            .menu ul li{
+               text-align: center;
+            }
+
+                .menu ul li a{
+                    color: rgb(9, 9, 9);
+                    line-height: 40px;
+                }
+
+                .menu-hamburguesa {
+                     display: block;
+                }
+
+                        .icono-hamburguesa {
+                            display: block;
+                            font-size: 30px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                        nav .logo img{
+                            width: 150px;
+                            padding: 10px 0;
+                        }
+
+/******* Carrusel *******/
+.carrusel{
+    height: 50vh;
+    
+    }
+        .carrusel img {
+            height: 50vh;
+        }
+
+/******* Fin de Carrusel *******/
+
+/******* Buscador *******/
+
+.buscador {
+    position: static;
+    transform: none;
+    margin-bottom: 20px; 
+    box-shadow: none;
+    z-index: auto;
+  }
+
+.buscador .form-select, .input-group {
+    width: 80%;
+    margin: 10px auto;
+}
+
+    .btn{
+        width: 50%;
+        margin: 10px auto;
+    }
+/******* Fin de Buscador *******/
+
+/****** Propiedades *******/
+
+.propiedades .ventas-prop, .alquileres-prop {
+    padding: 0;
+}
+
+    .propiedades .card-prop{
+        margin: 1rem .5rem;
+        width: 80%;
+    }
+
+/****** Fin de Propiedades *******/
+
+/******* Footer *******/
+
+.pie {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;}
+
+    .pie .copy{
+        display: none;
+    }
+
+        .pie .redes{
+            width: 80%;
+            padding: 1rem 0;
+        }
+
+            .pie .btn-top {
+                padding-right: 0;
+                justify-content: center;
+            }
+}
+
+
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    nav {
+        align-items: center;
+    }
+    
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    
+        .menu.active {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background: transparent;
+            background-color: rgba(0, 0, 0, 0.566);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        }
+    
+            .menu ul {
+                flex-direction: column;
+                list-style: none;
+                padding-left: 5%;
+            }
+    
+                .menu ul li{
+                   text-align: center;
+                }
+    
+                    .menu ul li a{
+                        color: rgb(9, 9, 9);
+                        line-height: 40px;
+                    }
+    
+                    .menu-hamburguesa {
+                         display: block;
+                    }
+    
+                            .icono-hamburguesa {
+                                display: block;
+                                font-size: 30px;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+
+    
+    /******* Carrusel *******/
+    .carrusel{
+        height: 50vh;
+        
+        }
+            .carrusel img {
+                height: 50vh;
+            }
+    
+    /******* Fin de Carrusel *******/
+    
+    /******* Buscador *******/
+
+.buscador {
+    position: static;
+    transform: none;
+    margin-bottom: 20px; 
+    box-shadow: none;
+    z-index: auto;
+  }
+    
+    .buscador .form-select, .input-group, .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+    /******* Fin de Buscador *******/
+    
+    /****** Propiedades *******/
+    
+    .propiedades .card-prop{
+        margin: .5rem;
+        width: 80%;
+    }
+    
+    /****** Fin de Propiedades *******/
+    
+    
+    /****** Formulario de Contacto *******/
+    .contacto {
+        width: 90%;
+        padding: 20px 0;
+    }
+    
+        .contacto .btn{
+            margin: 5px 0;
+            padding: 5px 10px;
+        }
+    /****** Fin de Contacto *******/
+    
+    /******* Footer *******/
+    
+    .pie {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;}
+    
+        .pie .copy{
+            display: none;
+        }
+    
+            .pie .redes{
+                width: 80%;
+                padding: 1rem 0;
+            }
+    
+                .pie .btn-top {
+                    padding-right: 0;
+                    justify-content: center;
+                }
+    }
+    
