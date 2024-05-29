@@ -100,6 +100,10 @@
         flex-direction: column;
     }
 
+    .servicios h2{
+            padding:2rem;
+    }
+
     .servicios article {
         width: 80%;
         height: auto;
